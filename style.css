@@ -610,6 +610,7 @@ footer {
 	}
 	iframe {
 		height:50vh;
+		min-width: 200px;
 	}
 	.page-2_right_box, iframe{
 		width: 100%;
