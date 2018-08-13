@@ -42,10 +42,6 @@ body {
 	font-family: Raleway Regular;
 }
 
-header {
-	margin: 0;
-}
-
 .menu-button {
 	position:fixed;
 	margin-left: -80px; 
@@ -156,7 +152,7 @@ input {
 
 .menu {
 	position: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 80px;
 	background-color: white;
 	margin-left: -80px;
