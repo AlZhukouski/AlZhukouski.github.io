@@ -637,6 +637,9 @@ footer {
 	#slides1, #slides2{
 		height: 200px;
 	}
+	.slide-button {
+	height: 40px;
+}
 	.controls {
 		padding: 5px 0px;
 		width: 30px;
