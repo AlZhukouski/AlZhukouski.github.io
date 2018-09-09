@@ -1,43 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-a {
-	text-decoration: none;
-}
-
 /*Fonts*/
 @font-face {
 	font-family: Montserrat-Bold;
@@ -61,147 +21,153 @@ a {
 }
 
 
-
-
-.container {
+.page {
+	margin: 0;
+}
+.link {
+	text-decoration: none;
+	color: #000;
+}
+.page__inner {
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 0 10px;
+	box-sizing: border-box;
 }
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-left: 132px;
 	align-items: flex-end;
+	padding: 15px 0px 15px 132px;
 }
-header ul {
-	width: 570px;
-	margin-top: 30px;
+.menu {
+	margin: 0;
+	padding: 0;
+	min-width: 570px;
 }
-header ul li {
+.menu__item{
 	display: inline-block;
-	border-right: 1px solid #ccccff;
 	width: 110px;
 	text-align: center;
 	font-family: Montserrat-Bold;
 	font-size: 14px;
-	line-height: 35px;
+	line-height: 30px;
 }
-header ul li:last-child {
-	border-right: none;
+.menu__item_vertical-line_grey{
+	border-right: 1px solid #ccccff;
 }
-
-header ul li a {
-	color: black;
-	display: block;
-}
-.header__feedback p{
+.request-a-call{
 	font-size: 16px;
 	text-align: right;
-	line-height: 20px;
+	padding: 5px;
 }
-.header__feedback p:first-child{
+.request-a-call__phone {
 	font-family: Montserrat-Medium;
 }
-.header__feedback p:last-child{
+.request-a-call__text {
 	font-family: Montserrat-Bold;
 	color: #f5b530;
+	margin: 0;
+	line-height: 30px;
 }
-.header__social p{
-	font-family: Montserrat-Medium;
+.contacts {
+	text-align: right;
 	font-size: 14px;
-	line-height: 25px;
+	font-family: Montserrat-Medium;
 }
-.header__social p a{
-	color: black;
-	padding-left: 10px;
+.contacts__e-mail-icon {
+	padding-right: 10px;
 }
-.header__social div img{
-	margin-left:  20px;
+.social-contacts__img {
+	padding:10px 5px 0px 10px;
 }
-
-.block_company-description {
+.company-description-block {
 	width: 100%;
 	height: 730px;
 	max-width: 1920px;
-	background:  url('img/block_company-description.jpg');
+	background:  url('img/block_company-description.jpg') no-repeat;
 	background-position: center;
 }
-.block_company-description_table {
-	display: table;
+.company-description-block__header{
+	display: flex;
+}
+.company-description-block__logo-position{
+	margin-top: -23px;
+}
+.form {
 	width: 100%;
-}
-.block_company-description_table_cell {
-	height: 60px;
-}
-.block_company-description_table img{
-	display: table-cell;
-	position: relative;
-	top: -23px;
-}
-.block_company-description_table form {
-	width: 100%;
-	display: table-cell;
 	position: relative;
 	background: #216ba3;
 	height: 60px;
-	vertical-align: top;
 }
-.block_company-description_table input, button {
-	border: none;
-	outline: none;
-}
-.block_company-description_table input {
+.form__search{
 	width: 85%;
 	height: 35px;
 	padding-left: 15px;
 	border-radius: 20px;
-	margin: 11px 10% auto 5%;
+	margin: 12px 10% auto 5%;
 }
-.block_company-description_table button {
+.form__submit {
 	height: 35px;
 	width: 35px;
 	position: absolute;
-	top: 11px;
+	top: 15px;
 	right: 9%;
 	cursor: pointer;
 	border-radius: 20px;
 	background:url("img/search-icon.png") no-repeat ;
 	background-position: center;
 }
-.block_company-description_flexbox {
-	display: flex;
-	height: 670px;
-	text-align: center;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
+.input {
+	border: none;
+	outline: none;
 }
-.block_company-description_flexbox h2{
+.company-description-block__content-box {
+	color: #fff;
+	text-align: center;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.company-description-block__title {
 	font-family: Montserrat-ExtraBold;
 	font-size: 30px;
-	color: #ffffff;
-	margin: 30px 0px 15px;
 }
-.block_company-description_flexbox p{
+.company-description-block__text {
 	font-family: Montserrat-Regular;
 	font-size: 18px;
-	color: #ffffff;
-	max-width: 745px;
-	margin: 15px 0px;
 }
-.block_company-description_flexbox a {
-	width: 100%;
-	max-width: 415px;
-	height: 71px;
-	background-color: #f5b530;
-	margin: 75px 0px 30px;
+.company-description-block__button {
+	margin-top: 60px;
 }
-.block_company-description_flexbox a p {
+.button {
 	font-family: PT Sans Caption Bold;
-	font-size: 20px;
-	margin-top: 25px;
-	color: #000;
+	border: none;
+	outline: none;
 }
+.button:hover {
+	cursor: pointer;
+}
+.button_size_big {
+	width: 415px;
+	height: 70px;
+	font-size: 20px;
+}
+.button_theme_yellow {
+	background-color: #f5b530;
+}
+.button_theme_yellow:hover {
+	background-color: #fbaa22;
+}
+.button_theme_yellow:active {
+	box-shadow: inset 1px -1px 4px 1px rgba(0,0,0,0.4);
+	background-color: #f9a416;
+}
+
+
+
+
+
+/*****************//*****************************/
+ {border: 1px solid #222;}

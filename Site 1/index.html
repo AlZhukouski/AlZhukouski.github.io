@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>СтройБизнесАвто</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		</head>
-	<body>
-		<div class="container">
-			<header>
-				<nav>
-					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Контакты</a></li>
-						
-					</ul>
-				</nav>
-				<div class="header__feedback">
-					<p><img src="img/phone-icon.png"> +7(495)649-82-79</p>
-					<p>Заказать звонок</p>
-					</div>
-				<div class="header__social">
-					<p><img src="img/mail-icon.png"><a href="">sba-sba@mail.ru</a></p>
-					<div><a href="https://www.facebook.com/"><img src="img/fb-icon.png"></a><a href=""><img src="img/vk-icon.png"></a><a href=""><img src="img/tl-icon.png"></a></div>
-			</header>
+<head>
+	<title>СтройБизнесАвто</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="page">
+	<header class="header page__inner">
+		<menu class="menu">
+			<a href="#" class="menu__item link menu__item_vertical-line_grey">Главная</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_grey">О нас</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_grey">Новости</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_grey">Каталог</a>
+			<a href="#" class="menu__item link">Контакты</a>
+		</menu>
+		<div class="request-a-call">
+			<a href="tel:+74956498279" class="request-a-call__phone link">
+				<img src="img/phone-icon.png" alt="phone" class="request-a-call__phone-img">+7 (495) 649-82-79
+			<p class="request-a-call__text">Заказать звонок</p></a>
+			
 		</div>
-		<div class="block_company-description">
-			<div class="container">
-				<div class="block_company-description_table">
-					<div class="block_company-description_table_cell">
-						<img src="img/logo.jpg">
-					</div>
-					<form>
-					<input type="text" placeholder="Поиск">
-					<button type="submit"></button>
-					</form>
-				</div>
-				<div class="block_company-description_flexbox">
-					<h2>Компания "СБА Group " является эксклюзивным дистрибьютером голландской компании Waterking BV и немецкого холдинга Bergmann Construction Equipment</h2>
-					<p>Уже более 10 лет мы успешно работаем на рынке и зарекомендовали себя как ответственного партнера в сфере поставок дорожно-cтроительной техники</p>
-					<a href="#"><p>Подробнее</p></a>
-				</div>
+		<div class="contacts">
+			<a href="mailto:sba-sba@mail.ru" class="link contacts__e-mail">
+				<img src="img/mail-icon.png" alt="e-mail" class="contacts__e-mail-icon">sba-sba@mail.ru
+			</a>
+			<div class="social-contacts">
+				<a href="" class="social-contacts__item"><img src="img/fb-icon.png" alt="facebook" class="social-contacts__img"></a>
+				<a href="" class="social-contacts__item"><img src="img/vk-icon.png" alt="vkontakte" class="social-contacts__img"></a>
+				<a href="" class="social-contacts__item"><img src="img/tl-icon.png" alt="telegram" class="social-contacts__img"></a>
 			</div>
 		</div>
-	</body>
+	</header>
+	<div class="company-description-block">
+		<div class="company-description-block__header page__inner">
+			<a href="#" class="logo"><img src="img/Logo.jpg" alt="" class="logo-pic company-description-block__logo-position"></a>
+			<form action="" class="form">
+				<input type="text" class="form__search input" placeholder="Поиск">
+				<input type="submit" class="form__submit input" value="">
+			</form>
+		</div>
+		<div class="company-description-block__content-box page__inner">
+			<h2 class="company-description-block__title">Компания "СБА Group " является эксклюзивным дистрибьютером голландской компании Waterking BV и немецкого холдинга Bergmann Construction Equipment</h2>
+			<p class="company-description-block__text">Уже более 10 лет мы успешно работаем на рынке и зарекомендовали себя как ответственного партнера в сфере поставок дорожно-cтроительной техники</p>
+			<div class="company-description-block__button"><button class="button button_size_big button_theme_yellow">Подробнее</button>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-of-machines">
+		<h2 class="title"><span class="title__yellow-frame"></span></h2>
+		<div class="catalog-item-box">
+			<div class="catalog-of-machines_item">
+				<img src="" alt="" class="catalog-of-machines_item-pic">
+				<div class="catalog-of-machines_item-title"></div>
+				.catalog-of-machines_item-
+			</div>
+		</div>
+	</div>
+</body>
 </html>
