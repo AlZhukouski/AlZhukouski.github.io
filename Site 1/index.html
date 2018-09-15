@@ -8,17 +8,17 @@
 </head>
 <body class="page">
 	<header class="header page__inner">
-		<menu class="menu">
-			<a href="#" class="menu__item link menu__item_vertical-line_grey">Главная</a>
-			<a href="#" class="menu__item link menu__item_vertical-line_grey">О нас</a>
-			<a href="#" class="menu__item link menu__item_vertical-line_grey">Новости</a>
-			<a href="#" class="menu__item link menu__item_vertical-line_grey">Каталог</a>
+		<menu class="menu header__menu">
+			<a href="#" class="menu__item link menu__item_vertical-line_gray">Главная</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_gray">О нас</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_gray">Новости</a>
+			<a href="#" class="menu__item link menu__item_vertical-line_gray">Каталог</a>
 			<a href="#" class="menu__item link">Контакты</a>
 		</menu>
 		<div class="request-a-call">
-			<a href="tel:+74956498279" class="request-a-call__phone link">
+			<div class="request-a-call__phone" >
 				<img src="img/phone-icon.png" alt="phone" class="request-a-call__phone-img">+7 (495) 649-82-79
-			<p class="request-a-call__text">Заказать звонок</p></a>
+			<p class="request-a-call__text">Заказать звонок</p></div>
 			
 		</div>
 		<div class="contacts">
@@ -26,17 +26,17 @@
 				<img src="img/mail-icon.png" alt="e-mail" class="contacts__e-mail-icon">sba-sba@mail.ru
 			</a>
 			<div class="social-contacts">
-				<a href="" class="social-contacts__item"><img src="img/fb-icon.png" alt="facebook" class="social-contacts__img"></a>
-				<a href="" class="social-contacts__item"><img src="img/vk-icon.png" alt="vkontakte" class="social-contacts__img"></a>
-				<a href="" class="social-contacts__item"><img src="img/tl-icon.png" alt="telegram" class="social-contacts__img"></a>
+				<a href="https://www.facebook.com/" class="social-contacts__item"><img src="img/fb-icon.png" alt="facebook" class="social-contacts__img"></a>
+				<a href="https://vk.com/" class="social-contacts__item"><img src="img/vk-icon.png" alt="vkontakte" class="social-contacts__img"></a>
+				<a href="https://telegram.org/" class="social-contacts__item"><img src="img/tl-icon.png" alt="telegram" class="social-contacts__img"></a>
 			</div>
 		</div>
 	</header>
 	<div class="company-description-block">
 		<div class="company-description-block__header page__inner">
-			<a href="#" class="logo"><img src="img/Logo.jpg" alt="" class="logo-pic company-description-block__logo-position"></a>
+			<a href="#" class="logo"><img src="img/logo-h.jpg" alt="" class="logo-pic company-description-block__logo-position"></a>
 			<form action="" class="form">
-				<input type="text" class="form__search input" placeholder="Поиск">
+				<input type="text" class="form__search input" placeholder="  Поиск">
 				<input type="submit" class="form__submit input" value="">
 			</form>
 		</div>
@@ -47,13 +47,143 @@
 			</div>
 		</div>
 	</div>
-	<div class="catalog-of-machines">
-		<h2 class="title"><span class="title__yellow-frame"></span></h2>
-		<div class="catalog-item-box">
+	<div class="catalog-of-machines page__inner">
+		<h2 class="title"><span class="title__yellow-frame"></span>Каталог нашей техники</h2>
+		<div class="catalog">
 			<div class="catalog-of-machines_item">
-				<img src="" alt="" class="catalog-of-machines_item-pic">
-				<div class="catalog-of-machines_item-title"></div>
-				.catalog-of-machines_item-
+				<div class="catalog-of-machines__pic"></div>
+				<div class="catalog__title catalog__title_f-w_bold">Мини-самосвалы</div>
+				<div class="catalog__title">Bergman</div>
+				<span class="drop-down-menu">...
+					<ul class="drop-down-menu__list">
+						<a href="" class="link"><li class="drop-down-menu__list-item">Мини-самосвалы</li></a>
+						<a href="" class="link"><li class="drop-down-menu__list-item">Шарнирно-сочлененные самосвалы</li></a>
+						<a href="" class="link"><li class="drop-down-menu__list-item">Мини-самосвалы</li></a>
+						<a href="" class="link"><li class="drop-down-menu__list-item">Мини самосвал Bergmann 4010 на гусеничном ходу</li></a>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-best-deals page__inner">
+		<h2 class="title"><span class="title__yellow-frame"></span>Наши лучшие предложения</h2>
+		<div class="catalog-best-deals__title-position">
+			<div class="catalog-best-deals__title">Землесос DOP©</div>
+		<div class="catalog-best-deals__title catalog-best-deals__title_clr_blue">(DAMEN)</div>
+		</div>
+		<div class="catalog">
+			<div class="catalog-best-deals__item">
+				<div class="catalog_title catalog__title_f-w_bold">Землесос DOP©</div>
+				<div class="catalog_title">(DAMEN)</div>
+				<div class="raiting">
+					<span class="star star_active">
+						<span class="star">
+							<span class="star ">
+								<span class="star">
+									<span class="star "></span>
+								</span>
+							</span>
+						</span>
+					</span>
+				</div>
+				<div class="catalog-best-deals__pic"></div>
+				<div class="catalog__title  catalog__title_f-w_bold">Характеристика понтонов Waterking</div>
+				<div class="catalog-best-deals__btn-position"><button class="button button_size_small button_theme_yellow">Подробнее</button></div>
+			</div>
+		</div>
+		<div class="catalog-best-deals__pagination-inner">
+			<div class="pagination">
+			<a href="#" class="pagination__item link active">1</a>
+			<a href="#" class="pagination__item link">2</a>
+			<a href="#" class="pagination__item link">3</a>
+			<a href="#" class="pagination__item link">5</a>
+			<a href="#" class="pagination__item link">6</a>
+			<a href="#" class="pagination__item link">7</a>
+			<a href="#" class="pagination__item link">8</a>
+			<a href="#" class="pagination__item link">9</a>
+			<a href="#" class="pagination__item link">10</a>
+			<a href="#" class="pagination__item link">...</a>
+			<a href="#" class="pagination__item link">23</a>
+			</div>
+		</div>
+	</div>
+	<div class="application-block">
+		<div class="application-block__frame">
+			<div class="application-block__content page__inner">
+				<p class="application-block__title">Оставить заявку до 30.08.2018</p>
+				<p class="application-block__subtitle">И получите скидку 10%</p>
+				<form action="" class="application-block__form">
+					<input type="text" class="application-block__input input" placeholder="Ваше имя">
+					<input type="text" class="application-block__input input" placeholder="Ваш телефон">
+					<button class="button application-block__button button_size_normal button_theme_yellow">Оставить заявку</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="news-block page__inner">
+		<h2 class="title"><span class="title__yellow-frame"></span>Новости</h2>
+		<div class="news-block__inner">
+			<div class="news-block__item">
+				<img src="img/news-1.png" class="news-block__pic">
+				<p class="news-block__publication-date">07.06.2018</p>
+				<h3 class="news-block__title">Гусеничные понтоны для хитачи ZX 330 в наличии!</h3>
+				<p class="news-block__text">В наличии гусеничные понтоны для экскаватора хитачи 330 , 350 и подобного класса экскаваторов любой марки.</p>
+				<a href="#" class="news-block__link link">Читать далее ...</a>
+			</div>
+			<div class="news-block__item">
+				<img src="img/news-2.png" class="news-block__pic">
+				<p class="news-block__publication-date">17.05.2018</p>
+				<h3 class="news-block__title">Гусеничные понтоны в наличии! </h3>
+				<p class="news-block__text">Гусеничные понтоны для 20-ти тонных экскаваторов в наличии на складе СБА -Groupe! Стоимость и условия поставки уточняйте у наших менеджеров!</p>
+				<a href="#" class="news-block__link link">Читать далее ...</a>
+			</div>
+			<div class="news-block__item">
+				<img src="img/news-3.png" class="news-block__pic">
+				<p class="news-block__publication-date">23.04.2018</p>
+				<h3 class="news-block__title">Как выбрать землесос?</h3>
+				<p class="news-block__text">Практически ежедневно мы сталкиваемся с вопросами от наших клиентов по поводу применения и подборки того или иного землесоса.</p>
+				<a href="#" class="news-block__link link">Читать далее ...</a>
+			</div>
+		</div>
+	</div>
+	<div class="subscription-block">
+		<div class="subscription-block__inner page__inner">
+			<div class="subscription-block__item">
+				<img src="img/big-e-mail-icon.png" alt="e-mail icon" class="big-e-mail-icon">
+				<div class="subscription-block__text-inner">
+					<p class="subscription-block__text-lvl-1">Подпишитесь на нашу рассылку </p>
+					<p class="subscription-block__text-lvl-2">Вы будете знать о всех наших новостях</p>
+				</div>
+			</div>
+			<form class="subscription-block__item">
+				<input type="text" class="subscription-block__input input" placeholder="Ваш адрес электронной почты">
+				<button class="button subscription-block__button button_size_small button_theme_yellow">Подписаться</button>
+			</form>
+		</div>
+	</div>
+	<div class="company-description-section">
+		<div class="page__inner">
+			<div class="description-block">
+				<h2 class="title company-description-section__title"><span class="title__yellow-frame company-description-section__frame"></span>О компании</h2>
+				<div class="description-block__text">Компания "СБА Group " занимается продажей дорожно-строительной и специальной техники на рынке с 2002 года. На наших стоянках вы сможете найти весь спектр дорожной и спецтехники. Компания "СБА Group "  готова помочь своим клиентам в поиске и подборе подходящей спецтехники, предложив лучшее в выбранном сегменте рынка, сочетание цены и качества. Также наша компания сотрудничает со многими лизинговыми компаниями и сможет подобрать для вас наиболее выгодные условия по лизингу и кредитам. Мы поставляем технику по Москве, области и всем регионам Российской Федерации. Полный список предлагаемой техники вы сможете найти в соответствующем разделе сайта. Главная задача компании "СБА Group "это продажа и реализация дорожно-строительной и специальной техники.</div>
+				<div class="description-block__triangle description-block__triangle_type_v1"></div>
+				<div class="description-block__triangle description-block__triangle_type_v2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer__inner page__inner">
+			<a href="#" class="logo"><img src="img/logo-f.jpg" alt="" class="logo-pic"></a>
+			<menu class="menu footer__menu">
+				<a href="#" class="menu__item link footer__link">Главная</a>
+				<a href="#" class="menu__item link footer__link">О нас</a>
+				<a href="#" class="menu__item link footer__link">Новости</a>
+				<a href="#" class="menu__item link footer__link">Каталог</a>
+				<a href="#" class="menu__item link footer__link">Контакты</a>
+			</menu>
+			<div class="request-a-call__phone" >
+				<img src="img/phone-icon-footer.png" alt="phone" class="request-a-call__phone-img">+7 (495) 649-82-79
+				<p class="request-a-call__text">Заказать звонок</p>
 			</div>
 		</div>
 	</div>
