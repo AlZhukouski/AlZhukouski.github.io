@@ -567,6 +567,15 @@
 	}
 }
 @media only screen and (max-width: 768px){
+	.menu{
+		display: none;
+	}
+	.company-description-block__title {
+		font-size: 24px;
+	}
+	.button_size_big {
+		width: 90%;
+	}
 	.application-block__form{
 		flex-direction: column;
 		align-items: center;
