@@ -230,7 +230,7 @@
 	color: #216ba3;
 }
 .catalog-of-machines__item:hover .catalog-of-machines__pic{
-	filter: contrast(90%)
+	filter: contrast(90%);
 }
 .catalog-of-machines__pic {
 	width: 165px;
