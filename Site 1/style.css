@@ -40,7 +40,7 @@
 	max-width: 1140px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 .header {
 	display: flex;
@@ -212,15 +212,16 @@
 .catalog{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
-.catalog-of-machines_item{
+.catalog-of-machines__item{
 	width: 205px;
 	height: 195px;
 	border: 1px solid rgba(255,255,255,0);
 	box-shadow: 0px 2px 3px gray;
 	position: relative;
 	padding: 20px;
+	margin: 20px 20px;
 	box-sizing: border-box;
 }
 .catalog-of-machines_item:hover{
@@ -293,6 +294,7 @@
 	border: 1px solid rgba(255,255,255,0);
 	box-shadow: 0px 2px 3px gray;
 	padding: 20px;
+	margin: 20px 10px;
 	box-sizing: border-box;
 }
 .catalog-best-deals__item:hover{
@@ -404,7 +406,7 @@
 }
 .news-block__inner{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 .news-block__item{
@@ -491,7 +493,7 @@
 }
 .description-block{
 	position: relative;
-	width: 750px;
+	max-width: 750px;
 	background-color: #fff; 
 	padding: 20px 100px 70px; 
 	box-sizing: border-box;
@@ -559,4 +561,7 @@
 		width: 100%;
 		text-align: center;
 	}
+}
+@media only screen and (max-width: 768px){
+	
 }
