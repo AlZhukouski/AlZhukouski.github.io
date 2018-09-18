@@ -359,12 +359,11 @@
 }
 .application-block{
 	width: 100%;
-	height: 245px;
 	box-sizing: border-box;
 	padding: 10px 24px 24px 19px;
 	margin: 0 auto;
 	max-width: 1920px;
-	background:  url('img/application-background.png') center no-repeat;
+	background:  url('img/application-background.jpg') center no-repeat;
 }
 .application-block__frame{
 	width: 100%;
@@ -386,7 +385,8 @@
 }
 .application-block__form{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	padding-bottom: 30px;
 }
 .application-block__input{
 	max-width: 320px;
@@ -456,10 +456,15 @@
 }
 .subscription-block__item{
 	min-width: 50%;
-	height: 48px;
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 15px 0;
+}
+.subscription-block__img-inner{
+	padding:3px 10px 0 0;
+}
+.big-e-mail-icon{
+	
 }
 .subscription-block__text-inner{
 	color: #fff;
@@ -495,7 +500,7 @@
 	position: relative;
 	max-width: 750px;
 	background-color: #fff; 
-	padding: 20px 100px 70px; 
+	padding: 20px 13.33% 70px; 
 	box-sizing: border-box;
 }
 .company-description-section__title{
@@ -513,7 +518,6 @@
 }
 .description-block__triangle{
 	position: absolute;
-	/*background-color: #f5b530;*/
 }
 .description-block__triangle_type_v1{
 	top: 0;
@@ -563,5 +567,31 @@
 	}
 }
 @media only screen and (max-width: 768px){
-	
+	.application-block__form{
+		flex-direction: column;
+		align-items: center;
+	}
+	.application-block__input, .application-block__button{
+		width: 100%;
+		max-width: 320px;
+		margin: 5px auto;
+	}
+	.subscription-block__item:first-child{
+		flex-direction: column;
+		align-content: center;
+	}
+	.subscription-block__text-inner{
+		white-space: normal;
+	}
+	.subscription-block__img-inner, .subscription-block__text-lvl-1, .subscription-block__text-lvl-2{
+		text-align: center;
+	}
+	.description-block{
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.description-block__text {
+		font-size: 16px;
+		line-height: 1.2em;
+	}
 }
