@@ -224,12 +224,12 @@
 	margin: 20px 20px;
 	box-sizing: border-box;
 }
-.catalog-of-machines_item:hover{
+.catalog-of-machines__item:hover{
 	border: 1px solid #f5b530;
 	box-shadow: none;
 	color: #216ba3;
 }
-.catalog-of-machines_item:hover .catalog-of-machines__pic{
+.catalog-of-machines__item:hover .catalog-of-machines__pic{
 	filter: contrast(90%)
 }
 .catalog-of-machines__pic {
