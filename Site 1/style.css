@@ -32,7 +32,7 @@
 	src: url(fonts/Montserrat-SemiBold.ttf);
 }
 
-html {
+.html {
 	margin: 0;
 	padding: 0;
 }
@@ -550,16 +550,16 @@ html {
 	max-width: 500px;
 	line-height: 1.7em;
 }
-.description-block__triangle{
+.triangle{
 	position: absolute;
 }
-.description-block__triangle_type_v1{
+.triangle_type_v1{
 	top: 0;
 	right: 0;
 	border-right: 80px solid #f5b530;
 	border-bottom: 105px solid transparent;
 }
-.description-block__triangle_type_v2{
+.triangle_type_v2{
 	left: 0;
 	bottom: 0;
 	border-bottom: 80px solid #f5b530;
@@ -604,6 +604,7 @@ html {
 }
 .news-box__item{
 	padding-top: 50px;
+	min-height: 340px;
 }
 .news-box__img{
 	margin-right: 20px;
@@ -722,6 +723,57 @@ html {
 	font-family: Montserrat-SemiBold;
 }
 /*---------------------End:Css for product.html--------------------*/
+
+/*---------------------Begin:Css for contacts.html------------------*/
+.contacts-block{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.contacts-block__navigation{
+	padding-bottom: 100px;
+}
+.contacts-box{
+	position: relative;
+	max-width: 720px;
+	box-shadow: 0px 3px 5px gray;
+	padding: 30px 8% 20px;
+	margin: 0 auto;
+}
+.contacts-block__logo-position{
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+.contacts-box__title{
+	font-family: Montserrat-Bold;
+	font-size: 20px;
+}
+.contacts-box__text{
+	font-family: Montserrat-Regular;
+	font-size: 18px;
+	max-width: 390px;
+	white-space: pre-wrap;
+}
+.triangle_type_v3{
+	top: 0;
+	left: 0;
+	border-top: 60px solid #f5b530;
+	border-right: 60px solid transparent;
+}
+.triangle_type_v4{
+	bottom: 0;
+	right: 0;
+	border-bottom: 60px solid #f5b530;
+	border-left: 60px solid transparent;
+}
+.google-map{
+	margin: 50px auto 0;
+	width: 100%;
+	max-width: 750px;
+	height: 100vw;
+	max-height: 450px;
+}
+/*---------------------End:Css for contacts.html--------------------*/
 /*****************//*****************************/
 {border: 1px solid #222;}
 
