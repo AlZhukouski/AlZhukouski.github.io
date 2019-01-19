@@ -255,8 +255,8 @@
 }
 .play-link{
 	position: absolute;
-	top:8px;
-	left: 8px;
+	top:9px;
+	left: 9px;
 	display: block;
 	width: 65px;
 	height: 65px;
@@ -299,6 +299,8 @@
 .service-info__wrapper{
 	display: inline-block;
 	background-color: rgba(255,255,255,0.6);
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .figure{
 	display: inline-block;
@@ -466,7 +468,7 @@
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	padding-top: 95px;
 }
@@ -596,3 +598,9 @@
 	padding-bottom: 10px;
 }
 /**************************End block Footer***************************/
+
+@media (min-width: 768px) {
+	.body {
+		font-size: 11px;
+	}
+}
