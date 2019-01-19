@@ -83,6 +83,7 @@
 	src: url(fonts/open_sans/OpenSans-SemiboldItalic.ttf);
 }
 .body{
+	position: relative;
 	font-family: OpenSans-Regular;
 	font-size: 17px;
 	margin: 0;
@@ -99,6 +100,69 @@
 .button{
 	padding: 0;
 }
+/**************************Begin block Reservation-box******************/
+.reservation-position{
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 3;
+}
+.inactive{
+	display: none;
+}
+.reservation-box{
+	width: 420px;
+	height: 455px;
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 30px;
+}
+.reservation-form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+}
+.input{
+	font-family: OpenSans-Italic;
+	font-size: 18px;
+	padding-left: 20px;
+	width: 315px;
+	height: 55px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	border:1px solid #71390b;
+}
+.input:active{
+	border:1px solid #71390b;
+	box-shadow: 0 0 3px #71390b;
+}
+.input-button__frame{
+	margin-top: 35px;
+	border:1px solid #71390b;
+	padding: 10px;
+}
+.input-button{
+	font-size: 18px;
+	background-color: #71390b;
+	color: #ffffff;
+	width: 205px;
+	height: 45px;
+	border: none;
+}
+/**************************End block Reservation-box********************/
 
 /**************************Begin block Header***************************/
 .header{
@@ -112,7 +176,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .logo{
 	width: 143px;
@@ -232,6 +296,10 @@
 	padding-top: 75px;
 	padding-bottom: 100px;
 }
+.service-info__wrapper{
+	display: inline-block;
+	background-color: rgba(255,255,255,0.6);
+}
 .figure{
 	display: inline-block;
 }
@@ -296,6 +364,7 @@
 	text-align: center;
 	padding-left: 5px;
 	padding-right: 5px;
+	padding-bottom: 10px;
 }
 .sirvice-block__icon-wrap{
 	height: 45px;
@@ -364,8 +433,8 @@
 	background-color: rgb(0,0,0,0.7);
 }
 .food-menu__link:hover>.food-menu__frame{
-	width: 355px;
-	height: 230px;
+	width: 90%;
+	height: 90%;
 }
 .food-menu__frame{
 	display: -webkit-flex;
@@ -392,26 +461,138 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
+	padding-top: 95px;
 }
 .gallery-block__item{
+	background-color: rgba(255,255,255,0.6);
+	padding-bottom: 20px;
 }
 .gallery-block__text{
 	max-width: 350px;
 }
+.gallery{
+}
+.gallery__wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 686px;
+}
+.gallery__img{
+	width: 620px;
+	height: 450px;
+}
+.gallery__img-arrow{
+	width: 18px;
+	height: 36px;
+}
 /**************************End block Gallery-block***********************/
 
-/**************************Begin block Header***************************/
-/**************************End block Header*****************************/
+/**************************Begin Reservation-block***********************/
+.reservation-block{
+	padding-top: 130px;
+	padding-bottom: 40px;
+	background: url('img/wave_form.png') top left no-repeat,
+				url('img/background_form.jpg') center no-repeat;
+}
+.reservation-block__position{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 8%;
+}
+/**************************End Reservation-block*************************/
 
-/**************************Begin block Header***************************/
-/**************************End block Header*****************************/
+/**************************Theme dark for Reservation form***************/
+.reservation-box_theme_dark{
+	background-color: rgba(0,0,0,0.5);
+}
+.figure__circle_theme_dark{
+	border-color: #ffffff;
+}
+.figure__line_theme_dark{
+	border-color: #ffffff
+}
+.figure__icon_theme_dark{
+	background-image: url('img/icon_fork_white.png');
+}
+.headline_theme_dark{
+	color: #ffffff;
+}
+.input_theme_dark{
+	color: #ffffff;
+	background-color: transparent;
+	border-color: #ffffff;
+}
+.input_theme_dark:active{
+	border:1px solid #ffffff;
+	box-shadow: 0 0 5px #ffffff;
+}
+.input-button__frame_theme_dark{
+	border-color: #ffffff;
+}
+.input-button_theme_dark{
+	background-color: #ffffff;
+	color: #000000;
+}
+/**************************End Theme dark for Reservation form**********/
+.contacts{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.contacts__item{
+	width: 400px;
+	min-width: 400px;
+	height: 410px;
+	text-align: center;
+	box-shadow: 0 0 5px #999696;
+	padding-top: 45px;
+}
+.contacts__title{
+	font-family: Vollkorn-SemiBold;
+	color: #71390b;
+	text-align: left;
+	padding-left: 40px;
+	margin: 40px 0 0 0;
+}
+.contacts__icon{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding-right: 10px;
+	vertical-align: bottom;
+}
+.contacts__text{
+	text-align: left;
+	padding-left: 75px;
+	margin: 0;
+}
+.contacts__link{
+	color: #000000;
+}
 
-/**************************Begin block Header***************************/
-/**************************End block Header*****************************/
-
-/**************************Begin block Header***************************/
-/**************************End block Header*****************************/
-
-/**************************Begin block Header***************************/
-/**************************End block Header*****************************/
+/**************************Begin block Footer*************************/
+.footer{
+	background-color: #2a221b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/**************************End block Footer***************************/

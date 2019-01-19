@@ -3,27 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="body">
+	<div class="reservation-position inactive">
+		<div class="reservation-box">
+			<div class="figure">
+				<span class="figure__circle"></span>
+				<span class="figure__line"></span>
+			<span class="figure__icon"></span>
+				<span class="figure__line"></span>
+				<span class="figure__circle"></span>
+			</div>
+			<h2 class="headline">Забронировать столик</h2>
+			<form action="" class="reservation-form">
+				<input type="name" name="Name" class="input" placeholder="Имя"></input>
+				<input type="tel" name="Telephone" class="input" placeholder="Телефон"></input>
+				<span class="input-button__frame"><input type="submit"  class="input-button" value="Забронировать"></input></span>
+			</form>
+		</div>
+	</div>
 	<header class="header">
 		<div class="interaction-block page__inner">
-			<img src="img/white_logo.png" alt="Logo" class="logo">
+			<a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo"></a>
 			<ul class="menu">
 				<li class="menu-item">
-					<a href="" class="link">Главная</a>
+					<a href="/" class="link">Главная</a>
 				</li>
 				<li class="menu-item">
-					<a href="" class="link">О ресторане</a>
+					<a href="#info" class="link">О ресторане</a>
 				</li>
 				<li class="menu-item">
-					<a href="" class="link">Меню</a>
+					<a href="#menu" class="link">Меню</a>
 				</li>
 				<li class="menu-item">
-					<a href="" class="link">Галерея</a>
+					<a href="#gallery" class="link">Галерея</a>
 				</li>
 				<li class="menu-item">
-					<a href="" class="link">Контакты</a>
+					<a href="#contacts" class="link">Контакты</a>
 				</li>
 			</ul>
 			<div class="reservation">
@@ -42,17 +60,19 @@
 		</div>
 		<span class="header-bootom__pic"></span>
 	</header>
-	<div class="service-info">
+	<div class="service-info" id="info">
 		<div class="page__inner">
-			<div class="figure">
-				<span class="figure__circle"></span>
-				<span class="figure__line"></span>
-				<span class="figure__icon"></span>
-				<span class="figure__line"></span>
-				<span class="figure__circle"></span>
-			</div>
-			<h2 class="headline">Ресторан «Champagne»</h2>
-			<p class="service-info__text">приглашает насладиться европейской и кавказской кухней. В меню присутствуют потрясающе вкусные блюда из мяса, птицы и рыбы. Также особое внимание уделено собственной кулинарной выпечке, состоящей из итальянских ингредиентов. Приятная атмосфера, дружелюбный персонал, демократичные цены — здесь одинаково хорошо провести время как для деловой встречи, так и для душевного вечера в компании друзей и близких.</p>
+				<div class="service-info__wrapper">
+					<div class="figure">
+					<span class="figure__circle"></span>
+					<span class="figure__line"></span>
+					<span class="figure__icon"></span>
+					<span class="figure__line"></span>
+					<span class="figure__circle"></span>
+				</div>
+				<h2 class="headline">Ресторан «Champagne»</h2>
+				<p class="service-info__text">приглашает насладиться европейской и кавказской кухней. В меню присутствуют потрясающе вкусные блюда из мяса, птицы и рыбы. Также особое внимание уделено собственной кулинарной выпечке, состоящей из итальянских ингредиентов. Приятная атмосфера, дружелюбный персонал, демократичные цены — здесь одинаково хорошо провести время как для деловой встречи, так и для душевного вечера в компании друзей и близких.</p>
+				</div>
 			<div class="sirvice-block">
 				<p class="sirvice-block__title">Также <span class="sirvice-block__title sirvice-block__title_clr_brown">ресторан «Champagne»</span> предлагает нашим уважаемым гостям:</p>
 				<div class="sirvice-block__wrapper">
@@ -90,7 +110,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="food-menu">
+	<div class="food-menu" id="menu">
 		<div class="page__inner">
 			<div class="figure">
 				<span class="figure__circle"></span>
@@ -132,7 +152,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="gallery-block">
+			<div class="gallery-block" id="gallery">
 				<div class="gallery-block__item">
 					<div class="figure">
 					<span class="figure__circle"></span>
@@ -145,10 +165,101 @@
 					<p class="gallery-block__text">Одна из особенностей нашего ресторана - это кондитерские изделия собственного приготовления на основе итальянских ингредиентов.</p>
 				</div>
 				<div class="gallery">
-					<div class="gallery__img"></div>
+					<div class="gallery__wrap">
+						<img class="gallery__img-arrow" src = "img/arrow1.png" onClick = "javascript: left_arrow()" /> 
+						<img class="gallery__img" src = "img/1.jpg" id = "img" > </img>
+						<img class="gallery__img-arrow" src = "img/arrow2.png" width = "18" height = "36"  onClick = "javascript: right_arrow()" />
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="reservation-block">
+		<div class="reservation-block__position page__inner">
+			<div class="reservation-box reservation-box_theme_dark">
+				<div class="figure "">
+					<span class="figure__circle figure__circle_theme_dark"></span>
+					<span class="figure__line figure__line_theme_dark"></span>
+					<span class="figure__icon figure__icon_theme_dark"></span>
+					<span class="figure__line figure__line_theme_dark"></span>
+					<span class="figure__circle figure__circle_theme_dark"></span>
+				</div>
+				<h2 class="headline headline_theme_dark">Забронировать столик</h2>
+				<form action="" class="reservation-form">
+					<input type="name" name="Name" class="input input_theme_dark" placeholder="Имя"></input>
+					<input type="tel" name="Telephone" class="input input_theme_dark" placeholder="Телефон"></input>
+					<span class="input-button__frame input-button__frame_theme_dark"><input type="submit"  class="input-button input-button_theme_dark" value="Забронировать"></input></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="contacts page__inner" id="contacts">
+		<div class="contacts__item">
+			<div class="figure">
+				<span class="figure__circle"></span>
+				<span class="figure__line"></span>
+				<span class="figure__icon"></span>
+				<span class="figure__line"></span>
+				<span class="figure__circle"></span>
+			</div>
+			<h2 class="headline">Контакты</h2>
+			<p class="contacts__title"><img src="img/icon_pin.png" alt="icon" class="contacts__icon">Наш адрес</p>
+			<p class="contacts__text">г.Москва, ул.Берзарина, д.23</p>
+			<p class="contacts__title"><img src="img/phone icon.png" alt="icon" class="contacts__icon">Номер телефона</p>
+			<p class="contacts__text"><a href="tel:89068313860" class="link contacts__link">8(906) 831 38 60</a></p>
+			<p class="contacts__title"><img src="img/icon_mail.png" alt="icon" class="contacts__icon">Наша почта</p>
+			<p class="contacts__text">info@lacafe-champagne</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.3106110945623!2d37.47003155139506!3d55.78784419666106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548fea325ae7f%3A0x6b0d69c5a36bccca!2z0YPQuy4g0JHQtdGA0LfQsNGA0LjQvdCwLCAyMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzE1NA!5e0!3m2!1sru!2sby!4v1547892788507" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="footer">
+		<div class="interaction-block page__inner">
+			<a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo"></a>
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="/" class="link">Главная</a>
+				</li>
+				<li class="menu-item">
+					<a href="#info" class="link">О ресторане</a>
+				</li>
+				<li class="menu-item">
+					<a href="#menu" class="link">Меню</a>
+				</li>
+				<li class="menu-item">
+					<a href="#gallery" class="link">Галерея</a>
+				</li>
+				<li class="menu-item">
+					<a href="#contacts" class="link">Контакты</a>
+				</li>
+			</ul>
+			<div class="reservation">
+				<div><a href="tel:84937357540" class="link tel">8 493 735 75 40</a></div>
+				<button class="reservation__button button">Заказать столик</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		var mas = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"] // массив картинок
+		var to = -1;  // Счетчик, указывающий на текущую картинки
+
+		function right_arrow() // Открытие следующей картинки(движение вправо)
+		{
+			var obj = document.getElementById("img");
+			if (to < mas.length-1)  to++ 
+			else
+				to = 0;
+				obj.src = mas[to];	 
+		}
+
+		function left_arrow() // Открытие предыдущей картинки(движение влево)
+		{
+		var obj = document.getElementById("img");
+		if (to > 0) to--;
+		else
+			to = mas.length-1;
+			obj.src = mas[to];
+		}
+	</script>
 </body>
 </html>
