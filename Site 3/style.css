@@ -660,6 +660,7 @@
 	}
 	.play-block{
 		margin-left: 65px;
+		width: auto;
 	}
 	.play-block__text{
 		font-size: 12px;
@@ -723,9 +724,26 @@
 	}
 	.gallery__wrap{
 		width: 320px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.gallery__img{
 		width: 80%;
 		height: 80vw;
+	}
+	.reservation-block__position{
+		padding-right: 0;
+		justify-content: center;
+	}
+	.reservation-box{
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.headline{
+		font-size: 24px;
+	}
+	.input{
+		width: 80%;
 	}
 }
