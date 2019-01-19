@@ -474,7 +474,7 @@
 }
 .gallery-block__item{
 	background-color: rgba(255,255,255,0.6);
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 .gallery-block__text{
 	max-width: 350px;
@@ -599,8 +599,133 @@
 }
 /**************************End block Footer***************************/
 
-@media (min-width: 768px) {
-	.body {
-		font-size: 11px;
+@media screen (max-width:1024px;) {
+	.menu{
+		display: none;
+	}
+	.interaction-block{
+		justify-content: space-around;
+	}
+	.food-menu__item{
+		margin-bottom: 40px;
+	}
+}
+@media screen (max-width:768px;) {
+	.header-content{
+		width: auto;
+	}
+	.service-info__wrapper{
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.food-menu__link:hover>.food-menu__frame{
+		width: 75%;
+		height: 75%;
+	}
+	.food-menu__item{
+		flex-basis: 340px;
+		height: 227px;
+	}
+	.contacts {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+@media screen (max-width:321px;) {
+	.logo{
+		width: 97px;
+		height: 61px;
+	}
+	.header-content{
+		margin-top: 75px;
+		height: 400px;
+		margin-bottom: -60px;
+	}
+	.header-content__logo{
+		margin-top: 30px;
+		width: 97px;
+		height: 61px;
+	}
+	.header-content__title{
+		margin-top: 20px;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.play-block{
+		margin-left: 65px;
+	}
+	.play-block__text{
+		font-size: 12px;
+		padding-left: 0;
+		padding-top: 25px;
+	}
+	.header-bootom__pic{
+		margin-top: 0;
+	}
+	.figure__line{
+		width: 100px;
+	}
+	.sirvice-block{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.sirvice-block__wrapper{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.sirvice-block__item{
+		flex-basis: auto;
+	}
+	.service-info__text{
+		text-align: left;
+		font-size: 17px;
+	}
+	.food-menu__container{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.food-menu__item{
+		margin-bottom: 20px;
+	}
+	.gallery-block__item{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.contacts__item{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background-color: #f9f9f9;
+		width: auto;
+		height: 380px;
+		min-width: auto;
+		padding-right: 10px;
+	}
+	.contacts__title{
+		padding-left: 20px;
+	}
+	.contacts__text{
+		padding-left: 55px;
+	}
+	.gallery__wrap{
+		width: 320px;
+	}
+	.gallery__img{
+		width: 80%;
+		height: 80vw;
 	}
 }
