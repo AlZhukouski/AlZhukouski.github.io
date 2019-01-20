@@ -38,4 +38,8 @@ $(document).ready(function(){
 	$('.reservation__button').click(function(){
 		$('.reservation-position').toggleClass('inactive')
 	})
+
+	$('.nav-item').click(function(){
+		$('#toggle').removeAttr('checked')
+	})
 })
