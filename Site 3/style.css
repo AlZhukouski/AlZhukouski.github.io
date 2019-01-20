@@ -82,6 +82,9 @@
 	font-family: OpenSans-SemiboldItalic;
 	src: url(fonts/open_sans/OpenSans-SemiboldItalic.ttf);
 }
+.page{
+	-webkit-tap-highlight-color: transparent;
+}
 .body{
 	position: relative;
 	font-family: OpenSans-Regular;
@@ -97,7 +100,7 @@
 	text-decoration: none;
 	color: #ffffff;
 }
-.button{
+.button:visited{
 	padding: 0;
 }
 /**************************Begin block Reservation-box******************/
@@ -562,6 +565,8 @@
 	justify-content: space-between;
 }
 .contacts__item{
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 400px;
 	min-width: 400px;
 	height: 410px;
@@ -618,7 +623,6 @@
 		margin-right: 15px;
 	}
 }
-
 @media (max-width:1024px) {
 	.header-content{
 		width: auto;
