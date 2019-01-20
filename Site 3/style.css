@@ -658,7 +658,7 @@
 
 #toggle:checked ~ .nav {
 	margin-bottom: 75px;
-    margin-right: 75px;
+    margin-right: 90px;
     margin-left: 0px;
     margin-top: 0px;
 	pointer-events: auto;
@@ -1014,6 +1014,12 @@
 	}
 }
 @media  (max-width:768px) {
+	.header{
+	background: url('img/background_main_mobile.jpg') center no-repeat;
+	}
+	.service-info{
+	background: url('img/plate_of_food_mobile.jpg') top right no-repeat;
+	}
 	.logo{
 		width: 97px;
 		height: 61px;
