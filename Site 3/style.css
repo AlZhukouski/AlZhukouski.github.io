@@ -490,6 +490,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 686px;
+	background-color: rgb(255,255,255,0.7);
 }
 .gallery__img{
 	width: 620px;
@@ -599,18 +600,26 @@
 }
 /**************************End block Footer***************************/
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1280px) {
 	.menu{
 		display: none;
 	}
 	.interaction-block{
 		justify-content: space-around;
 	}
+}
+@media (max-width: 1175px) {
 	.food-menu__item{
 		margin-bottom: 40px;
 	}
+	.sirvice-block{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
-@media (max-width:769px) {
+
+@media (max-width:1024px) {
 	.header-content{
 		width: auto;
 	}
@@ -638,7 +647,7 @@
 		justify-content: space-around;
 	}
 }
-@media  (max-width:321px) {
+@media  (max-width:768px) {
 	.logo{
 		width: 97px;
 		height: 61px;
@@ -659,12 +668,14 @@
 		margin-bottom: 20px;
 	}
 	.play-block{
-		margin-left: 65px;
-		width: auto;
+		width: 220px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.play-block__text{
+		display: inline-block;
 		font-size: 12px;
-		padding-left: 0;
+		padding-left: 70px;
 		padding-top: 25px;
 	}
 	.header-bootom__pic{
@@ -683,14 +694,16 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: center;
 	}
 	.sirvice-block__item{
-		flex-basis: auto;
+		flex-basis: 200px;
 	}
 	.service-info__text{
 		text-align: left;
@@ -722,28 +735,45 @@
 	.contacts__text{
 		padding-left: 55px;
 	}
+	.gallery-block{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
 	.gallery__wrap{
-		width: 320px;
+		width: 90vw;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 	.gallery__img{
-		width: 80%;
-		height: 80vw;
+		width: 80vw;
+		height: 60vw;
 	}
+}
+@media  (max-width:500px) {
 	.reservation-block__position{
 		padding-right: 0;
 		justify-content: center;
 	}
 	.reservation-box{
-		width: auto;
+		width: 80vw;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.reservation-form{
+		padding-top: 0;
+	}
 	.headline{
-		font-size: 24px;
+		font-size: 27px;
 	}
 	.input{
 		width: 80%;
+	}
+}
+@media  (max-width:500px){
+	.headline{
+		font-size: 24px;
 	}
 }
