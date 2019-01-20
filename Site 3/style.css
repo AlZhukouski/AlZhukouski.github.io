@@ -614,6 +614,7 @@
 	margin-right: auto;
 	padding-top: 10px;
 	padding-left: 10px;
+	z-index: 3;
 }
 .container {
 	background-color: rgba(0,0,0,0.8);
@@ -656,8 +657,10 @@
 }
 
 #toggle:checked ~ .nav {
-	margin-bottom: 100px;
-	margin-right: 100px;
+	margin-bottom: 75px;
+    margin-right: 75px;
+    margin-left: 0px;
+    margin-top: 0px;
 	pointer-events: auto;
 	-webkit-transform: translate(50px, 50px);
 	  -ms-transform: translate(50px, 50px);
@@ -733,6 +736,7 @@
 /* Toggle button */
 .button-toggle {
 	position: absolute;
+	right: 0;
 	display: inline-block;
 	width: 20px;
 	height: 20px;
@@ -962,6 +966,9 @@
 	}
 }
 @media (max-width: 1280px) {
+	.inactive-mobile{
+		display: none;
+	}
 	.menu{
 		display: none;
 	}
