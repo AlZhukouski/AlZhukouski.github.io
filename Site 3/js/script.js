@@ -42,4 +42,11 @@ $(document).ready(function(){
 	$('.nav-item').click(function(){
 		$('#toggle').removeAttr('checked')
 	})
+	$('.close-box').click(function(){
+		$('#toggle').removeAttr('checked')
+	})
+	$('.container').click(function(event){
+		event.stopPropagation()
+	})
+
 })

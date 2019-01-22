@@ -12,17 +12,18 @@
 <body class="body">
 	<div class="container-wrap">
 		<div class="container">
-		    <input id="toggle" type="checkbox">
-		    <label class="toggle-container" for="toggle">
-		        <span class="button button-toggle"></span>
-		    </label>
-		    <nav class="nav slide-animation">
-		        <a class="nav-item link" href="">Главная</a>
-		        <a class="nav-item link" href="#info">О ресторане</a>
-		        <a class="nav-item link" href="#foodmenu">Меню</a>
-		        <a class="nav-item link" href="#gallery">Галерея</a>
-		        <a class="nav-item link" href="#contacts">Контакты</a>
-		    </nav>
+			<input id="toggle" type="checkbox">
+			<label class="toggle-container" for="toggle">
+				<span class="button button-toggle"></span>
+			</label>
+			<div class="close-box"></div>
+			<nav class="nav slide-animation">
+				<a class="nav-item link" href="#top">Главная</a>
+				<a class="nav-item link" href="#info">О ресторане</a>
+				<a class="nav-item link" href="#foodmenu">Меню</a>
+				<a class="nav-item link" href="#gallery">Галерея</a>
+				<a class="nav-item link" href="#contacts">Контакты</a>
+			</nav>
 		</div>
 	</div>
 	<div class="reservation-position inactive">
@@ -42,12 +43,12 @@
 			</form>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" id="top">
 		<div class="interaction-block page__inner">
 			<a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo inactive-mobile"></a>
 			<ul class="menu slide-animation" >
 				<li class="menu-item">
-					<a href="/" class="link">Главная</a>
+					<a href="#top" class="link">Главная</a>
 				</li>
 				<li class="menu-item">
 					<a href="#info" class="link">О ресторане</a>
@@ -236,7 +237,7 @@
 			<a href="/" class="link"><img src="img/white_logo.png" alt="Logo" class="logo"></a>
 			<ul class="menu slide-animation">
 				<li class="menu-item">
-					<a href="/" class="link">Главная</a>
+					<a href="#top" class="link">Главная</a>
 				</li>
 				<li class="menu-item">
 					<a href="#info" class="link">О ресторане</a>
