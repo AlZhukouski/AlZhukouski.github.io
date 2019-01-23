@@ -61,4 +61,16 @@ $(document).ready(function(){
 		//анимируем переход на расстояние - top за 800 мс
 		$('body,html').animate({scrollTop: top}, 800);
 	});
+
+
+	$('.play-link').click(function(){
+		$('.video-block').slideDown('slow', function() {
+			$('.video-block__position').append('<iframe class="iframe" src="https://www.youtube.com/embed/v5bClGpH0iI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		})
+	});
+	$('.video-block').click(function(){
+		$('.video-block').slideUp('slow', function() {
+			$('.iframe').remove();
+		});
+	});
 })
