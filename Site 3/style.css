@@ -1088,12 +1088,6 @@
 	}
 }
 @media  (max-width:768px) {
-	.header{
-	background: url('img/background_main_mobile.jpg') center no-repeat;
-	}
-	.service-info{
-	background: url('img/plate_of_food_mobile.jpg') top right no-repeat;
-	}
 	.logo{
 		width: 97px;
 		height: 61px;
