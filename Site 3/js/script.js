@@ -72,4 +72,6 @@ $(document).ready(function(){
 			$('.iframe').remove();
 		});
 	});
+	//отключаем временно ссылки в Food-menu
+	$('a.food-menu__link').click(function() { return false; });
 })

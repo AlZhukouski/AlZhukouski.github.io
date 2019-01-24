@@ -178,6 +178,14 @@
 	height: 45px;
 	border: none;
 }
+.input-button:hover{
+	-webkit-box-shadow: 0 0 10px rgba(113,57,11,1);
+	        box-shadow: 0 0 10px rgba(113,57,11,1)
+}
+.input-button:active{
+	-webkit-box-shadow: 0 0 20px rgba(113,57,11,1);
+	        box-shadow: 0 0 20px rgba(113,57,11,1)
+}
 /**************************End block Reservation-box********************/
 
 /**************************Begin block Header***************************/
@@ -628,6 +636,14 @@
 	background-color: #ffffff;
 	color: #000000;
 }
+.input-button_theme_dark:hover{
+	-webkit-box-shadow: 0 0 10px rgba(255,255,255,0.7);
+	        box-shadow: 0 0 10px rgba(255,255,255,0.7)
+}
+.input-button_theme_dark:active{
+	-webkit-box-shadow: 0 0 20px rgba(255,255,255,0.6);
+	        box-shadow: 0 0 20px rgba(255,255,255,0.6)
+}
 /**************************End Theme dark for Reservation form**********/
 .contacts{
 	display: -moz-flex;
@@ -646,7 +662,7 @@
 .contacts__item{
 	width: 400px;
 	min-width: 400px;
-	height: 410px;
+	height: 405px;
 	text-align: center;
 	-webkit-box-shadow: 0 0 5px #999696;
 	        box-shadow: 0 0 5px #999696;
@@ -1026,7 +1042,7 @@
 	align-items: center;
 }
 .iframe{
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 /***********************Video bloc*****************************/
@@ -1193,6 +1209,11 @@
 		height: 60vw;
 	}
 }
+@media  (max-width:530px) {
+	.iframe{
+	height: 50%;
+	}
+}
 @media  (max-width:500px) {
 	.reservation-block__position{
 		padding-right: 0;
@@ -1215,7 +1236,7 @@
 		width: 80%;
 	}
 }
-@media  (max-width:500px){
+@media  (max-width:400px){
 	.headline{
 		font-size: 24px;
 	}
