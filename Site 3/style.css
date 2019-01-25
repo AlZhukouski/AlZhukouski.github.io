@@ -586,7 +586,7 @@
 .reservation-block{
 	padding-top: 130px;
 	padding-bottom: 40px;
-	background: url('img/wave_form.png') top left no-repeat,
+	background: url('img/wave_form.png') top center no-repeat,
 				url('img/background_form.jpg') center no-repeat;
 }
 .reservation-block__position{
