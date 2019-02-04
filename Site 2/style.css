@@ -562,3 +562,80 @@ body{
 	background-color: #fafbfd;
 }
 /**************************End Request block******************/
+
+/**************************Begin Contacts block****************/
+.contacts__wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 80px;
+	margin-bottom: 160px;
+
+}
+.contacts-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	height: 475px;
+}
+.contacts-info__title{
+	font-family: NotoSans-Bold;
+	font-size: 20px;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+.contacts-info__number{
+	font-size: 18px;
+	margin: 0 0 10px 0;
+}
+.contacts-info__link{
+	font-size: 18px;
+	color: #0f9f31
+}
+.contacts-info__text{
+	font-size: 16px;
+}
+.contacts-info__icon{
+	display: inline-block;
+	height: 22px;
+	width: 28px;
+	margin: 0 2px;
+}
+.contacts-info__icon_type_phone{
+	background: url('img/phone.png') center no-repeat;
+}
+.contacts-info__icon_type_mts{
+	background: url('img/mts.png') center no-repeat;
+}
+.contacts-info__icon_type_velcom{
+	background: url('img/velcom.png') center no-repeat;
+}
+.contacts-info__icon_type_viber{
+	background: url('img/viber.png') center no-repeat;
+}
+.contacts-info__icon_type_whatsapp{
+	background: url('img/whatsapp.png') center no-repeat;
+}
+.contacts-info__icon_type_mail{
+	background: url('img/mail.png') center no-repeat;
+}
+.contacts-info__icon_type_point{
+	background: url('img/point.png') center no-repeat;
+}
+/**************************End Contacts block******************/
