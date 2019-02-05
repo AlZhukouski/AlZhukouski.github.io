@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var imageHrefs = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"] // массив картинок
+	var imageHrefs = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg"] // массив картинок
 	var imageIndex = 0;  // Счетчик, указывающий на текущую картинки
 	var galleryImage = $("#gallery-image");
 	function right_arrow() // Открытие следующей картинки(движение вправо)
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$('.play-link').click(function(){
 		$('.video-block').slideDown('slow', function() {
 			//Добавить iframe class="iframe" . Удалить width and height
-			$('.video-block__position').append('<iframe class="iframe" src="https://www.youtube.com/embed/v5bClGpH0iI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+			$('.video-block__position').append('<iframe class="iframe" src="https://www.youtube.com/embed/4d7ixL36oA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 		})
 	});
 	$('.video-block').click(function(){
