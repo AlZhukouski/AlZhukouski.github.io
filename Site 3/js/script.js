@@ -73,5 +73,18 @@ $(document).ready(function(){
 		});
 	});
 	//отключаем временно ссылки в Food-menu
-	$('a.food-menu__link').click(function() { return false; });
+	$('a.food-menu__link').click(function() { return false;
+	});
+	$(function(){
+		$(window).scroll(function() {
+			if($(this).scrollTop() >= 10) {
+				$('.menu-wrap').removeClass('menu-wrap__inactive');
+				$('.menu-wrap').addClass('menu-wrap__active');
+				}
+			else{
+				$('.menu-wrap').addClass('menu-wrap__inactive');
+				$('.menu-wrap').removeClass('menu-wrap__active');
+			}
+		});
+	});
 })
