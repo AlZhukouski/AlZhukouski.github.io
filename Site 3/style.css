@@ -234,8 +234,9 @@
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
-	left: 0;
-	width: 100%;
+	width: 1920px;
+	left: 50%;
+	transform: translate(-50%);
 	height: 68px;
 	padding-top: 30px;
 }
