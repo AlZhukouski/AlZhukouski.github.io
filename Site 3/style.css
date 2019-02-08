@@ -210,6 +210,7 @@
 .logo{
 	width: 143px;
 	height: 91px;
+	z-index: 3;
 }
 .menu{
 	display: -moz-flex;
@@ -277,6 +278,7 @@
 }
 .reservation{
 	text-align: right;
+		z-index: 3;
 }
 .tel{
 	font-size: 20px;
@@ -341,6 +343,7 @@
 }
 .play-link:hover{
 	background: url('img/video-hover.png') center no-repeat;
+	cursor: pointer;
 }
 .play-block__dots{
 	position: absolute;
