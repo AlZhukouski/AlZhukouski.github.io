@@ -62,12 +62,14 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop: top}, 800);
 	});
 	$('.play-link').click(function(){
+		$('.body').addClass('noscroll');
 		$('.video-block').slideDown('slow', function() {
 			//Добавить iframe class="iframe" . Удалить width and height
 			$('.video-block__position').append('<iframe class="iframe" src="https://www.youtube.com/embed/4d7ixL36oA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
 		})
 	});
 	$('.video-block').click(function(){
+		$('.body').removeClass('noscroll');
 		$('.video-block').slideUp('slow', function() {
 			$('.iframe').remove();
 		});
@@ -87,4 +89,95 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	var pichrefs = ["img/menu-1.jpg","img/menu-2.jpg","img/menu-3.jpg","img/menu-4.jpg","img/menu-5.jpg","img/menu-6.jpg"] // массив картинок
+	var picIndex = 0;  // Счетчик, указывающий на текущую картинки
+	var galleryPic = $(".food-gallery__img");
+
+	function btn_right_arrow() // Открытие следующей картинки(движение вправо)
+	{
+		if (picIndex < pichrefs.length-1) picIndex++;
+		else{
+			picIndex = 0;
+		}
+		galleryPic.fadeOut('fast', function () {
+			$('.food-gallery__wrap').scrollTop(0);
+			galleryPic.attr('src', pichrefs[picIndex]);
+			galleryPic.fadeIn('fast');
+		});
+	}
+
+	function btn_left_arrow() // Открытие предыдущей картинки(движение влево)
+	{
+		if (picIndex > 0) picIndex--;
+		else{
+			picIndex = pichrefs.length-1;
+		}
+		galleryPic.fadeOut('fast', function () {
+			$('.food-gallery__wrap').scrollTop(0);
+			galleryPic.attr('src', pichrefs[picIndex]);
+			galleryPic.fadeIn('fast');
+		});
+	}
+
+	$('.food-gallery__left-arrow').click(btn_left_arrow)
+	$('.food-gallery__right-arrow').click(btn_right_arrow)
+
+	$('.click_item-1').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-1.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 0;
+	});
+	$('.click_item-2').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-1.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 0;
+	});
+	$('.click_item-3').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-6.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 5;
+	});
+	$('.click_item-4').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-1.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 0;
+	});
+	$('.click_item-5').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-4.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 3;
+	});
+	$('.click_item-6').click(function() {
+		$('.food-gallery__img').attr('src', "img/menu-5.jpg");
+		$('.food-gallery').addClass('food-gallery__active');
+		$('.body').addClass('noscroll');
+		$('.food-gallery__wrap').scrollTop(0);
+		picIndex = 4;
+	});
+
+	$('.food-gallery').click(function() { 
+		$('.food-gallery__img').attr('src', "");
+		$('.food-gallery').removeClass('food-gallery__active');
+		$('.body').removeClass('noscroll');
+	});
+	$('.food-gallery__img').click(function(event){
+		event.stopPropagation()
+	})
+	$('.food-gallery__left-arrow').click(function(event){
+		event.stopPropagation()
+	})
+	$('.food-gallery__right-arrow').click(function(event){
+		event.stopPropagation()
+	})
 })
