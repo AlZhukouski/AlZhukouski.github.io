@@ -271,7 +271,7 @@
 	transition-timing-function: ease;
 	transition-duration: 1s;
 	background-color: rgba(0,0,0,0.9);
-	z-index: 2;
+	z-index: 4;
 }
 .menu-wrap__inactive{
 	background-color: rgba(0,0,0,0.9);
