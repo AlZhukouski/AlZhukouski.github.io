@@ -313,6 +313,7 @@
 	height: 35px;
 	border:1px solid #ffffff;
 	background-color: transparent;
+	z-index: 1;
 }
 .reservation__button:hover{
 	transition-timing-function: ease;
