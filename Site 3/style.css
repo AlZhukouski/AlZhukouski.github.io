@@ -98,6 +98,7 @@
 }
 .noscroll{
 	overflow: hidden;
+	margin-right: 17px;
 }
 .link{
 	text-decoration: none;
@@ -144,7 +145,7 @@
 	        align-items: center;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.9);
 	z-index: 4;
 }
 .inactive{
@@ -1114,7 +1115,7 @@
 	min-width: 300px;
 	height: 100%;
 	min-height: 300px;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.8);
 	z-index: 4;
 	padding-top: 5vh;
 }
