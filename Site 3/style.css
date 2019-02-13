@@ -807,7 +807,7 @@
 	margin-right: auto;
 	padding-top: 10px;
 	padding-left: 10px;
-	z-index: 2;
+	z-index: 4;
 }
 .close-box{
 	display: none;
