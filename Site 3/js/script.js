@@ -31,12 +31,14 @@ $(document).ready(function(){
 
 	$('.reservation-position').click(function(){
 		$(this).toggleClass('inactive')
+		$('.body').removeClass('noscroll');
 	})
 	$('.reservation-box').click(function(event){
 		event.stopPropagation()
 	})
 	$('.reservation__button').click(function(){
 		$('.reservation-position').toggleClass('inactive')
+		$('.body').addClass('noscroll');
 	})
 
 	$('.nav-item').click(function(){
