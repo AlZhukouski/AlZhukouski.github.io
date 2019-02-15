@@ -94,10 +94,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-.noscroll{
-    overflow: hidden;
-    margin-right: 17px;
-}
 .link{
     text-decoration: none;
     color: #ffffff;
@@ -1022,7 +1018,7 @@
     min-width: 300px;
     height: 100%;
     min-height: 300px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
     z-index: 4;
     padding-top: 5vh;
 }

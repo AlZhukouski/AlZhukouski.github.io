@@ -31,14 +31,14 @@ $(document).ready(function(){
 
     $('.reservation-position').click(function(){
         $(this).toggleClass('inactive')
-        $('.body').removeClass('noscroll');
+        scrollLock = false;
     })
     $('.reservation-box').click(function(event){
         event.stopPropagation()
     })
     $('.reservation__button').click(function(){
         $('.reservation-position').toggleClass('inactive')
-        $('.body').addClass('noscroll');
+        scrollLock = true;
     })
 
     $('.nav-item').click(function(){
@@ -64,6 +64,7 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 800);
     });
     $('.play-link').click(function(){
+        scrollLock = true;
         $('.body').addClass('noscroll');
         $('.video-block').slideDown('slow', function() {
             //Добавить iframe class="iframe" . Удалить width and height
@@ -71,6 +72,7 @@ $(document).ready(function(){
         })
     });
     $('.video-block').click(function(){
+        scrollLock = false;
         $('.body').removeClass('noscroll');
         $('.video-block').slideUp('slow', function() {
             $('.iframe').remove();
@@ -127,9 +129,10 @@ $(document).ready(function(){
     function openGallery(indexZ){
         $('.food-gallery__img').attr('src', "img/menu-" + indexZ++ + ".jpg");
         $('.food-gallery').addClass('food-gallery__active');
-        $('.body').addClass('noscroll');
+        /*$('.body').addClass('noscroll');*/
         $('.food-gallery__wrap').scrollTop(0);
         picIndex = indexZ;
+        scrollLock = true;
     }
         $('.click_item-1').click(function(){
         openGallery(1);
@@ -153,6 +156,7 @@ $(document).ready(function(){
         $('.food-gallery__img').attr('src', "");
         $('.food-gallery').removeClass('food-gallery__active');
         $('.body').removeClass('noscroll');
+        scrollLock = false;
     });
     $('.food-gallery__img').click(function(event){
         event.stopPropagation()
@@ -163,4 +167,11 @@ $(document).ready(function(){
     $('.food-gallery__right-arrow').click(function(event){
         event.stopPropagation()
     })
+    var $window = $(window), previousScrollTop = 0, scrollLock = false;
+        $window.scroll(function(event) {     
+    if(scrollLock) {
+        $window.scrollTop(previousScrollTop); 
+        }
+        previousScrollTop = $window.scrollTop();
+    });
 })
