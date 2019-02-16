@@ -568,7 +568,10 @@
     height: 80vh;
     overflow: auto;
 }
-.food-gallery__img{width: 100%;}
+.food-gallery__img{
+    width: 100%;
+    margin-bottom: -5px;
+}
 .food-gallery__nav{
     height: 17vh;
     width: 80%;
