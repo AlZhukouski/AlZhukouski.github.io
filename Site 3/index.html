@@ -37,11 +37,17 @@
                 <span class="figure__circle"></span>
             </div>
             <h2 class="headline">Забронировать столик</h2>
-            <form action="" class="reservation-form">
-                <input type="name" name="Name" class="input" placeholder="Имя"></input>
-                <input type="tel" name="Telephone" class="input" placeholder="Телефон"></input>
+            <form class="reservation-form" id="form">
+                <input type="text" name="name" class="input" placeholder="Имя"></input>
+                <input type="text" name="phone" class="input" placeholder="Телефон"></input>
                 <span class="input-button__frame"><input type="submit"  class="input-button" value="Забронировать"></input></span>
             </form>
+        </div>
+    </div>
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h2>Спасибо за заявку</h2>
+            <div class="close-popup js-close-thank-you"></div>
         </div>
     </div>
     <header class="header" id="top">
@@ -235,13 +241,13 @@
             </div>
             <h2 class="headline">Контакты</h2>
             <p class="contacts__title"><img src="img/icon_pin.png" alt="icon" class="contacts__icon">Наш адрес</p>
-            <p class="contacts__text">г.Москва, ул.Берзарина, д.23</p>
+            <p class="contacts__text">г.Москва, ул.Профсоюзная 64 к.2, комплекс дирижабль</p>
             <p class="contacts__title"><img src="img/phone icon.png" alt="icon" class="contacts__icon">Номер телефона</p>
             <p class="contacts__text"><a href="tel:89068313860" class="link contacts__link">8(906) 831 38 60</a></p>
             <p class="contacts__title"><img src="img/icon_mail.png" alt="icon" class="contacts__icon">Наша почта</p>
-            <p class="contacts__text">info@lacafe-champagne</p>
+            <p class="contacts__text"><a href="mailto:artursilva5@mail.ru" class="link contacts__link">artursilva5@mail.ru</a></p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.3106110945623!2d37.47003155139506!3d55.78784419666106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548fea325ae7f%3A0x6b0d69c5a36bccca!2z0YPQuy4g0JHQtdGA0LfQsNGA0LjQvdCwLCAyMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzE1NA!5e0!3m2!1sru!2sby!4v1547892788507" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1125.1676817912805!2d37.54789159633769!3d55.66576817707365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cdf1d5ded81%3A0x7367ef6c5d429dee!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgNjQsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTczOTM!5e0!3m2!1sru!2sby!4v1550845606126" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <footer class="footer">
         <div class="interaction-block page__inner slide-animation">
@@ -255,5 +261,6 @@
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="jquery.maskedinput.js"></script>
 </body>
 </html>
