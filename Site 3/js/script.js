@@ -8,9 +8,9 @@ $(document).ready(function(){
         else{
             imageIndex = 0;
         }
-        galleryImage.fadeOut('fast', function () {
+        galleryImage.fadeOut('slow', function () {
             galleryImage.attr('src', imageHrefs[imageIndex]);
-            galleryImage.fadeIn('fast');
+            galleryImage.fadeIn('slow');
         });
     }
 
@@ -20,9 +20,9 @@ $(document).ready(function(){
         else{
             imageIndex = imageHrefs.length-1;
         }
-        galleryImage.fadeOut('fast', function () {
+        galleryImage.fadeOut('slow', function () {
             galleryImage.attr('src', imageHrefs[imageIndex]);
-            galleryImage.fadeIn('fast');
+            galleryImage.fadeIn('slow');
         });
     }
 
@@ -104,10 +104,10 @@ $(document).ready(function(){
         else{
             picIndex = 0;
         }
-        galleryPic.fadeOut('fast', function () {
+        galleryPic.fadeOut('slow', function () {
             $('.food-gallery__wrap').scrollTop(0);
             galleryPic.attr('src', pichrefs[picIndex]);
-            galleryPic.fadeIn('fast');
+            galleryPic.fadeIn('slow');
         });
     }
 
@@ -117,10 +117,10 @@ $(document).ready(function(){
         else{
             picIndex = pichrefs.length-1;
         }
-        galleryPic.fadeOut('fast', function () {
+        galleryPic.fadeOut('slow', function () {
             $('.food-gallery__wrap').scrollTop(0);
             galleryPic.attr('src', pichrefs[picIndex]);
-            galleryPic.fadeIn('fast');
+            galleryPic.fadeIn('slow');
         });
     }
 
