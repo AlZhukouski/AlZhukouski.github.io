@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>LaCafeChampagne</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -37,16 +37,16 @@
                 <span class="figure__circle"></span>
             </div>
             <h2 class="headline">Забронировать столик</h2>
-            <form class="reservation-form" id="form">
+            <form class="reservation-form" id="form1" name="form">
                 <input type="text" name="name" class="input" placeholder="Имя"></input>
                 <input type="text" name="phone" class="input" placeholder="Телефон"></input>
-                <span class="input-button__frame"><input type="submit"  class="input-button" value="Забронировать"></input></span>
+                <span class="input-button__frame "><input type="submit"  class="input-button " value="Забронировать"></input></span>
             </form>
         </div>
     </div>
     <div class="overlay js-overlay-thank-you">
         <div class="popup js-thank-you">
-            <h2>Спасибо за заявку</h2>
+            <h2 class="popup__text">Спасибо за заявку</h2>
             <div class="close-popup js-close-thank-you"></div>
         </div>
     </div>
@@ -222,9 +222,9 @@
                     <span class="figure__circle figure__circle_theme_dark"></span>
                 </div>
                 <h2 class="headline headline_theme_dark">Забронировать столик</h2>
-                <form action="" class="reservation-form">
-                    <input type="name" name="Name" class="input input_theme_dark" placeholder="Имя"></input>
-                    <input type="tel" name="Telephone" class="input input_theme_dark" placeholder="Телефон"></input>
+                <form class="reservation-form" id="form2" name="form2">
+                    <input type="text" name="name" class="input input_theme_dark" placeholder="Имя"></input>
+                    <input type="text" name="phone" class="input input_theme_dark" placeholder="Телефон"></input>
                     <span class="input-button__frame input-button__frame_theme_dark"><input type="submit"  class="input-button input-button_theme_dark" value="Забронировать"></input></span>
                 </form>
             </div>
@@ -258,9 +258,8 @@
             </div>
         </div>
     </footer>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script src="jquery.maskedinput.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
 </body>
 </html>

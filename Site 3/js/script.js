@@ -2,6 +2,11 @@ $(document).ready(function(){
     var imageHrefs = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg"] // массив картинок
     var imageIndex = 0;  // Счетчик, указывающий на текущую картинки
     var galleryImage = $("#gallery-image");
+    while (imageIndex < imageHrefs.length-1) {
+        galleryImage.attr('src', imageHrefs[imageIndex]);
+        imageIndex++;
+    }
+    imageIndex = 0;
     function right_arrow() // Открытие следующей картинки(движение вправо)
     {
         if (imageIndex < imageHrefs.length-1) imageIndex++;
@@ -30,7 +35,7 @@ $(document).ready(function(){
     $('#gallery-right-arrow').click(right_arrow)
 
     $('.reservation-position').click(function(){
-        $(this).toggleClass('inactive')
+        $('.reservation-position').toggleClass('inactive')
         scrollLock = false;
     })
     $('.reservation-box').click(function(event){
@@ -97,7 +102,11 @@ $(document).ready(function(){
     var pichrefs = ["img/menu-1.jpg","img/menu-2.jpg","img/menu-3.jpg","img/menu-4.jpg","img/menu-5.jpg","img/menu-6.jpg"] // массив картинок
     var picIndex = 0;  // Счетчик, указывающий на текущую картинки
     var galleryPic = $(".food-gallery__img");
-
+    while (picIndex < pichrefs.length-1) {
+        galleryPic.attr('src', pichrefs[picIndex]);
+        picIndex++;
+    }
+    picIndex = 0;
     function btn_right_arrow() // Открытие следующей картинки(движение вправо)
     {
         if (picIndex < pichrefs.length-1) picIndex++;
@@ -174,23 +183,48 @@ $(document).ready(function(){
         }
         previousScrollTop = $window.scrollTop();
     });
-    // Отправка заявки 
-    $('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-        if (document.form.name.value == '' || document.form.phone.value == '' ) {
-            valid = false;
-            return valid;
-        }
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function() {
-            $('.js-overlay-thank-you').fadeIn();
-            $(this).find('input').val('');
-            $('#form').trigger('reset');
-        });
-        return false;
+// Отправка заявки 
+$('#form1').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+    if (document.form.name.value == '' || document.form.phone.value == '' ) {
+        valid = false;
+        return valid;
+    }
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $('.js-overlay-thank-you').fadeIn();
+        $(this).find('input').val('');
+        $('#form1').trigger('reset');
+        $('.reservation-position').toggleClass('inactive');
+        scrollLock = false;
+        setTimeout(function(){
+              $('.js-overlay-thank-you').fadeOut();
+                }, 1500);
     });
+    return false;
+});
+
+$('#form2').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+    if (document.forms['form2'].name.value == '' || document.forms['form2'].phone.value == '' ) {
+        valid = false;
+        return valid;
+    }
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $('.js-overlay-thank-you').fadeIn();
+        $(this).find('input').val('');
+        $('#form2').trigger('reset');
+        setTimeout(function(){
+              $('.js-overlay-thank-you').fadeOut();
+                }, 1500);
+    });
+    return false;
+});
 
     // Закрыть попап «спасибо»
     $('.js-close-thank-you').click(function() { // по клику на крестик
