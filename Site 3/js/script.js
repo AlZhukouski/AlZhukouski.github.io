@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var imageHrefs = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg"] // массив картинок
+    var imageHrefs = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/8.jpg","img/9.jpg","img/10.jpg","img/11.jpg","img/12.jpg","img/13.jpg","img/14.jpg","img/15.jpg","img/16.jpg"] // массив картинок
     var imageIndex = 0;  // Счетчик, указывающий на текущую картинки
     var galleryImage = $("#gallery-image");
     while (imageIndex < imageHrefs.length-1) {
@@ -7,16 +7,22 @@ $(document).ready(function(){
         imageIndex++;
     }
     imageIndex = 0;
+    galleryImage.attr('src', imageHrefs[imageIndex]);
+    function image_change(){
+        galleryImage.fadeOut('slow', function () {
+            galleryImage.attr('src', imageHrefs[imageIndex]);
+            galleryImage.on("load", function() {
+                galleryImage.fadeIn('slow');
+            })
+        });
+    }
     function right_arrow() // Открытие следующей картинки(движение вправо)
     {
         if (imageIndex < imageHrefs.length-1) imageIndex++;
         else{
             imageIndex = 0;
         }
-        galleryImage.fadeOut('slow', function () {
-            galleryImage.attr('src', imageHrefs[imageIndex]);
-            galleryImage.fadeIn('slow');
-        });
+        image_change();
     }
 
     function left_arrow() // Открытие предыдущей картинки(движение влево)
@@ -25,10 +31,7 @@ $(document).ready(function(){
         else{
             imageIndex = imageHrefs.length-1;
         }
-        galleryImage.fadeOut('slow', function () {
-            galleryImage.attr('src', imageHrefs[imageIndex]);
-            galleryImage.fadeIn('slow');
-        });
+        image_change();
     }
 
     $('#gallery-left-arrow').click(left_arrow)
@@ -107,17 +110,22 @@ $(document).ready(function(){
         picIndex++;
     }
     picIndex = 0;
+    function pic_change(){
+        galleryPic.fadeOut('slow', function () {
+            $('.food-gallery__wrap').scrollTop(0);
+            galleryPic.attr('src', pichrefs[picIndex]);
+            galleryPic.on("load", function() {
+                galleryPic.fadeIn('slow');
+            })
+        });
+    }
     function btn_right_arrow() // Открытие следующей картинки(движение вправо)
     {
         if (picIndex < pichrefs.length-1) picIndex++;
         else{
             picIndex = 0;
         }
-        galleryPic.fadeOut('slow', function () {
-            $('.food-gallery__wrap').scrollTop(0);
-            galleryPic.attr('src', pichrefs[picIndex]);
-            galleryPic.fadeIn('slow');
-        });
+        pic_change();
     }
 
     function btn_left_arrow() // Открытие предыдущей картинки(движение влево)
@@ -126,11 +134,7 @@ $(document).ready(function(){
         else{
             picIndex = pichrefs.length-1;
         }
-        galleryPic.fadeOut('slow', function () {
-            $('.food-gallery__wrap').scrollTop(0);
-            galleryPic.attr('src', pichrefs[picIndex]);
-            galleryPic.fadeIn('slow');
-        });
+        pic_change();
     }
 
     $('.food-gallery__left-arrow').click(btn_left_arrow)
