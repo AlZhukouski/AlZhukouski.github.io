@@ -158,7 +158,7 @@
     position: relative;
     z-index: 1;
 }
-.catalog__dropdown-wrap:hover>{
+.catalog__dropdown-wrap:hover{
     position: relative;
 }
 .catalog__btn{
@@ -339,7 +339,7 @@
     color: #767676;
     font-size: 12px;
     text-align: right;
-    margin: 7px 5px; 0 0;
+    margin: 7px 5px;
 }
 .catalog__interaction-sheet{
     position: absolute;
