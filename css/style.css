@@ -1,21 +1,56 @@
 @font-face {
-    font-family:OpenSans-Regular;
-    src:url('font/OpenSans-Regular.ttf');
+    font-family: 'Roboto';
+    src: url('../Roboto-Bold.eot');
+    src: url('../Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Roboto-Bold.woff2') format('woff2'),
+        url('../Roboto-Bold.woff') format('woff'),
+        url('../Roboto-Bold.ttf') format('truetype'),
+        url('../Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
+
 @font-face {
-    font-family:OpenSans-Italic;
-    src:url('font/OpenSans-Italic.ttf');
+    font-family: 'Roboto';
+    src: url('../Roboto-Regular.eot');
+    src: url('../Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Roboto-Regular.woff2') format('woff2'),
+        url('../Roboto-Regular.woff') format('woff'),
+        url('../Roboto-Regular.ttf') format('truetype'),
+        url('../Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-    font-family:Roboto-Bold;
-    src:url('font/Roboto-Bold.ttf');
+    font-family: 'Open Sans';
+    src: url('../OpenSans-Italic.eot');
+    src: url('../OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../OpenSans-Italic.woff2') format('woff2'),
+        url('../OpenSans-Italic.woff') format('woff'),
+        url('../OpenSans-Italic.ttf') format('truetype'),
+        url('../OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
 }
+
 @font-face {
-    font-family:Roboto-Regular;
-    src:url('font/Roboto-Regular.ttf');
+    font-family: 'Open Sans';
+    src: url('../OpenSans.eot');
+    src: url('../OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../OpenSans.woff2') format('woff2'),
+        url('../OpenSans.woff') format('woff'),
+        url('../OpenSans.ttf') format('truetype'),
+        url('../OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 .page{
-    font-family: OpenSans-Regular;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
     font-size: 14px;
     color: #464646;
 }
@@ -57,15 +92,17 @@
     justify-content: space-between;
 }
 .title{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
     font-size: 27px;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 40px;
-    font-weight: normal;
 }
 .title_mod_abridged-version{
-    font-family:Roboto-Bold;
     font-weight: bold;
+    line-height: 19px;
     font-size: 16px;
     margin-bottom: 0;
     text-transform: none;
@@ -76,6 +113,7 @@
 }
 .video-review__text_mod_abridged-version{
     margin: 0;
+    line-height: 19px;
 }
 .video-review__button{
     width: 148px;
@@ -105,7 +143,9 @@
     margin-bottom: 50px;
 }
 .sidebar__title{
-    font-family:Roboto-Regular;
+    font-family: 'Roboto';
+    line-height: 19px;
+    width: 260px;
     font-size: 16px;
     color: #84B53F;
     margin: 0;
