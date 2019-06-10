@@ -53,9 +53,6 @@
     color: #464646;
     margin: 0;
 }
-.container{
-    margin: 0 15px;
-}
 .button{
     font-family: 'Open Sans';
     background-color: #fff;
@@ -68,6 +65,8 @@
 .button:focus {outline:0;}
 .video-review{
     text-align: center;
+    margin: 0 15px;
+
 }
 .video-review_mod_abridged-version{
     padding-top: 20px;
@@ -360,9 +359,6 @@
     font-size: 15px;
     border: 1px solid #84B53F;
 }
-.catalog__order-btn:hover{
-    box-shadow: 0px 2px 3px 1px rgba(100,100,100,0.9);
-}
 .catalog__order-btn:active{
     box-shadow: 0px 0px 2px 1px grey inset;
     border: 1px solid #fff;
@@ -482,6 +478,7 @@
     }
     .catalog__filters{
         width: auto;
+        max-width: 700px;
     }
     .catalog__btn{
         width: auto;
@@ -588,6 +585,7 @@
     }
     .video-review{
         padding-left: 5px;
+        margin: 0 auto; 
     }
     .title{
         font-size: 27px;
@@ -597,6 +595,7 @@
     .title_mod_abridged-version {
         font-size: 16px;
         margin: 0;
+        line-height: 19px;
     }
     .title_mod_m-bottom{
         margin:67px 0 55px;
@@ -614,6 +613,7 @@
         margin: 0 0 20px;
         line-height: 19px;
         height: 57px;
+        max-width: 750px;
     }
     .catalog__filters{
         max-width: 790px;
